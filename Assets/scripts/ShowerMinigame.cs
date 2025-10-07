@@ -31,6 +31,7 @@ public class ShowerMinigame : MonoBehaviour, IMinigame
     {
         showerMinigameCanvas.SetActive(true);
         interactPrompt.SetActive(false);
+        showerMinigameInteract.SetActive(false);
 
         gameActive = true;
         successfulHits = 0;
@@ -130,7 +131,6 @@ public class ShowerMinigame : MonoBehaviour, IMinigame
     {
         gameActive = false;
         showerMinigameCanvas.SetActive(false);
-        showerMinigameInteract.SetActive(false);
         escapeText.enabled = false;
       
         manager?.MinigameCompleted(this);

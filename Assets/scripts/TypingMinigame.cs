@@ -51,6 +51,8 @@ public class TypingMinigame : MonoBehaviour, IMinigame
 
     public void StartGame()
     {
+        typingMinigameInteract.SetActive(false);
+
         typingCanvas.SetActive(true);
         interactPrompt.SetActive(false);
         typingText.enabled = true;
@@ -82,7 +84,6 @@ public class TypingMinigame : MonoBehaviour, IMinigame
         typingCanvas.SetActive(false);
         typingText.enabled = false;
         escapeText.enabled = false;
-        typingMinigameInteract.SetActive(false);
 
         // resumes player movement
         Cursor.lockState = CursorLockMode.Locked;
