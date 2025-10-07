@@ -1721,7 +1721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 473, y: 199.9}
+  m_AnchoredPosition: {x: 473, y: 208.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356075145
@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press space at the right time!
+  m_text: Press F at the right time!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
   m_sharedMaterial: {fileID: 4054033738969512145, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
@@ -5935,7 +5935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 117, y: -452.7}
+  m_AnchoredPosition: {x: 117, y: -471.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935883107
@@ -5958,7 +5958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Esc to Exit
+  m_text: Press Space to Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
   m_sharedMaterial: {fileID: 4054033738969512145, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
@@ -12224,7 +12224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Esc to Exit
+  m_text: Press Space to Exit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
   m_sharedMaterial: {fileID: 4054033738969512145, guid: 4e7da210de6cdf6459459edca2d80e7c, type: 2}
@@ -12319,7 +12319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 123.028496, y: -455.5}
+  m_AnchoredPosition: {x: 123.028496, y: -474.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2112685393
@@ -13765,10 +13765,10 @@ SceneRoots:
   - {fileID: 1812254790}
   - {fileID: 1259949530}
   - {fileID: 1925003675}
-  - {fileID: 1535237958}
   - {fileID: 1715202500}
   - {fileID: 687742614}
   - {fileID: 699353039}
   - {fileID: 2003862548}
+  - {fileID: 1535237958}
   - {fileID: 1130205003}
   - {fileID: 1183148881}

@@ -69,7 +69,7 @@ public class TypingMinigame : MonoBehaviour, IMinigame
     void TypingFinished()
     {
         escapeText.enabled = true;
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             EndTypingGame();
         }

@@ -56,7 +56,7 @@ public class ShowerMinigame : MonoBehaviour, IMinigame
 
         MoveIndicator();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (InWarmZone())
             {
@@ -80,7 +80,7 @@ public class ShowerMinigame : MonoBehaviour, IMinigame
             }
         }
 
-        if (showerDone == true && Input.GetKeyDown(KeyCode.Escape))
+        if (showerDone == true && Input.GetKeyDown(KeyCode.Space))
         {
             EndShowerGame();
         }
