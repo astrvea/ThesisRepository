@@ -4,7 +4,17 @@ public class InteractScript : MonoBehaviour
 {
     private bool isPlayerInRange;
     public GameObject interactPrompt;
-    public TypingMinigame typingMinigame;
+    public MonoBehaviour minigameStart;
+
+    private IMinigame minigame;
+
+    private void Start()
+    {
+        if (minigameStart != null && minigameStart is IMinigame)
+            minigame = minigameStart as IMinigame;
+
+        // check the minigame's validity
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,7 +35,7 @@ public class InteractScript : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
-            typingMinigame.StartTypingGame();
+            minigame?.StartGame();
         }
     }
 }

@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class TypingMinigame : MonoBehaviour
+public class TypingMinigame : MonoBehaviour, IMinigame
 {
     [Header("UI")]
     public GameObject typingCanvas;
@@ -18,6 +18,8 @@ public class TypingMinigame : MonoBehaviour
     private int currentCharCount;
     private bool isTyping;
 
+    public MinigameManager manager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +31,8 @@ public class TypingMinigame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isTyping) return;
+        if (!isTyping) 
+            return;
 
         // any key types paragraph
         if (Input.anyKeyDown)
@@ -46,7 +49,7 @@ public class TypingMinigame : MonoBehaviour
         }
     }
 
-    public void StartTypingGame()
+    public void StartGame()
     {
         typingCanvas.SetActive(true);
         interactPrompt.SetActive(false);
@@ -72,12 +75,14 @@ public class TypingMinigame : MonoBehaviour
 
     void EndTypingGame()
     {
+        // notify minigame manager
+        manager?.MinigameCompleted(this);
+
         isTyping = false;
         typingCanvas.SetActive(false);
         typingText.enabled = false;
         escapeText.enabled = false;
         typingMinigameInteract.SetActive(false);
-
 
         // resumes player movement
         Cursor.lockState = CursorLockMode.Locked;
