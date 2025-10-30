@@ -99,6 +99,11 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public bool IsActive()
+    {
+        return isActive;
+    }
+
     void EndDialogue()
     {
         isActive = false;

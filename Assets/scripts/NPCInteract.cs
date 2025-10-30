@@ -16,7 +16,7 @@ public class NPCInteract : MonoBehaviour
 
     void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.F))
+        if (playerInRange && Input.GetKeyDown(KeyCode.F) && !dialogue.IsActive())
         {
             if (interactPrompt != null)
                 interactPrompt.gameObject.SetActive(false);
