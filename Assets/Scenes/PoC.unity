@@ -3088,7 +3088,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396.89, y: 174.56}
+  m_AnchoredPosition: {x: -391.5, y: 174.56}
   m_SizeDelta: {x: 244.6103, y: 262.26}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &816802349
@@ -4326,6 +4326,15 @@ MonoBehaviour:
   - characterName: Quinn
     line: Thank you, and I'm sorry.
     portrait: {fileID: 21300000, guid: b4e22d863231e714fa5a33255c2f18fe, type: 3}
+  - characterName: Manny
+    line: No, I can fix this.
+    portrait: {fileID: 21300000, guid: b4e22d863231e714fa5a33255c2f18fe, type: 3}
+  - characterName: Manny
+    line: Just trust me.
+    portrait: {fileID: 21300000, guid: b4e22d863231e714fa5a33255c2f18fe, type: 3}
+  - characterName: Quinn
+    line: One last time.
+    portrait: {fileID: 21300000, guid: b4e22d863231e714fa5a33255c2f18fe, type: 3}
   textSpeed: 0.05
   onDialogueEnd:
     m_PersistentCalls:
@@ -5396,7 +5405,7 @@ MonoBehaviour:
   - key: 109
     clip: {fileID: 8300000, guid: 6a17ba597a6b44adb84fd5374d949550, type: 3}
     fadeImage: {fileID: 165203667}
-  nextSceneName: Prototype2
+  nextSceneName: DreamWorld
   resonatePrompt: {fileID: 1278520700}
 --- !u!4 &1419196679
 Transform:

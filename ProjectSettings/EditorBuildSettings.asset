@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PoC.unity
     guid: 073124d4f6a744bddb5eaab14f3b2dce
+  - enabled: 1
+    path: Assets/Scenes/DreamWorld.unity
+    guid: 859557b1043cc4b9aa5cc72b25145f19
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
