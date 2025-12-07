@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro;
 
 [System.Serializable]
@@ -23,6 +24,9 @@ public class Dialogue : MonoBehaviour
     [Header("Dialogue Settings")]
     public List<DialogueLine> lines = new List<DialogueLine>();
     public float textSpeed = 0.05f;
+
+    [Header("Events")]
+    public UnityEvent onDialogueEnd;  // starts melody mechanic
 
     private int index = 0;
     private bool isTyping = false;
@@ -108,5 +112,7 @@ public class Dialogue : MonoBehaviour
     {
         isActive = false;
         gameObject.SetActive(false);
+
+        onDialogueEnd?.Invoke();
     }
 }
